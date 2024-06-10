@@ -11,12 +11,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val getStarted = findViewById<Button>(R.id.btnSplashContinue)
+        val getStarted = findViewById<Button>(R.id.btnSplashContinue) // Declaring a variable for the continue button
         val closeSplash = findViewById<Button>(R.id.btnSplashExit)
 
         getStarted.setOnClickListener {
             val nextPage1 = Intent(this, MainScreen::class.java)
-            startActivity(nextPage1)
+            startActivity(nextPage1) // on click event the user will be transitioned to the main screen
         }
         closeSplash.setOnClickListener {
             exitProcess(0)
