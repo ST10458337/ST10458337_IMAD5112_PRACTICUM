@@ -11,10 +11,14 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val getStarted = findViewById<Button>(R.id.btnSplashContinue)
+        val closeSplash = findViewById<Button>(R.id.btnSplashExit)
 
-        getStarted.setOnClickListener { 
-            val next = Intent(this, mainScreen::class.java)
+        getStarted.setOnClickListener {
+            val next = Intent(this, MainScreen::class.java)
             startActivity(next)
+        }
+        closeSplash.setOnClickListener {
+
         }
     }
 }
