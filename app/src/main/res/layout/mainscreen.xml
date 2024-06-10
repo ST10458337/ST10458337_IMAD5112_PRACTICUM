@@ -28,23 +28,38 @@
         tools:layout_editor_absoluteX="221dp"
         tools:layout_editor_absoluteY="493dp" />
 
-    <EditText
-        android:id="@+id/editTextText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Name"
-        tools:layout_editor_absoluteX="102dp"
-        tools:layout_editor_absoluteY="162dp" />
+    <TextView
+        android:id="@+id/txtDisplay"
+        android:layout_width="178dp"
+        android:layout_height="82dp"
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="272dp" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/edtMinTemp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
-        tools:layout_editor_absoluteX="101dp"
-        tools:layout_editor_absoluteY="231dp" />
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="107dp" />
+
+    <EditText
+        android:id="@+id/edtMaxTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="176dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Average Temperature"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="46dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
