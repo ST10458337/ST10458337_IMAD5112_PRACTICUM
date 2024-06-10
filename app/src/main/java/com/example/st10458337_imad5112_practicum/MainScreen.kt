@@ -24,8 +24,8 @@ class MainScreen : AppCompatActivity() {
         val exitMain = findViewById<Button>(R.id.btnExitMain)
 
         moveToDetail.setOnClickListener {
-            val nextPage = Intent(this, DetailView::class.java)
-            startActivity(nextPage)
+            val nextPage2 = Intent(this, DetailView::class.java)
+            startActivity(nextPage2)
         }
 
         calcAverage = findViewById(R.id.btnAverage)
@@ -34,7 +34,7 @@ class MainScreen : AppCompatActivity() {
 
         calcAverage.setOnClickListener {
             averageTemperature()
-            averageAndDays.text = "$days"
+            averageAndDays.text = "$days" + "${averageTemperature()}"
         }
 
         exitMain.setOnClickListener {

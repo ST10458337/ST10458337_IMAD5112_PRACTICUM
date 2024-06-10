@@ -15,8 +15,8 @@ class MainActivity : AppCompatActivity() {
         val closeSplash = findViewById<Button>(R.id.btnSplashExit)
 
         getStarted.setOnClickListener {
-            val next = Intent(this, MainScreen::class.java)
-            startActivity(next)
+            val nextPage1 = Intent(this, MainScreen::class.java)
+            startActivity(nextPage1)
         }
         closeSplash.setOnClickListener {
             exitProcess(0)
